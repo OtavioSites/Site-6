@@ -11,11 +11,12 @@ function atualizar(valor){
 }
 
 function Aumentar(){
+    setInterval(function(){
     let botao = document.getElementsByClassName("button")[0];
     botao = ExtractValue(botao.textContent);
     
-    atualizar(botao)
-
+    atualizar(+botao)
+    }, 100)
 }
 
 
