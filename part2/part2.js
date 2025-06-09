@@ -11,12 +11,17 @@ function atualizar(valor){
 }
 
 function porcentagemQuantificador(){
-    m
+    const input = document.getElementById("valor").valueAsNumber;
+    if(input > spanLimite){
+        atualizar(atualizar(100))
+    }else{
+        
+    }
 }
 
 function limite(limite){
     
-    limite = Math.max(0, Math.min(limite));
+   return limite = Math.max(0, Math.min(spanLimite));
     
 
     
